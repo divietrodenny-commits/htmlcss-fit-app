@@ -1,0 +1,23 @@
+* 
+/* Emoj (frist task) */
+.stats-grid:nth-child(1)::before {
+    position: absolute;
+    content: "🔥";
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    
+}
+span.stat-number {
+    padding: 1.5rem;
+}
+ 
+/* highlight third card (second task) */
+
+.stats-grid:nth-child(3) {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stats-container > .stats-grid:nth-child(3) .stat-number,
+.stats-container > .stats-grid:nth-child(3) .stat-label {
+    color: white 
+}
