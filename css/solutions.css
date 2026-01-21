@@ -24,8 +24,10 @@ span.stat-number {
 
 /* hover effect */
 
-.stat-grid:hover {
-    box-shadow: 5px 5px 5px rgb(54, 48, 48);
+.stats-grid:hover {
+  transform: translateY(-5px); /* si solleva di 5px verso l’alto */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* ombra più forte */
+
 }
  
 /* Intermediate card color*/
@@ -62,4 +64,17 @@ span.stat-number {
   transform: translateY(-50%);
   font-size: 0.8rem;
   color: white
+}
+/*When an input or select field is focused, it should have a blue border and a blue shadow  */
+.goals-container input,
+.goals-container select {
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.goals-container input:focus,
+.goals-container select:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.3);
 }
