@@ -53,3 +53,13 @@ span.stat-number {
   font-size: 1.2rem;
   margin-bottom: 4px;   
 }
+/* add % in the progress bar */
+.progress-fill::after {
+  content: "65%";
+  position: absolute;
+  right: 8px;         
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: white
+}
