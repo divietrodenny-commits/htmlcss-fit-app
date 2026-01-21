@@ -1,4 +1,4 @@
-* 
+
 /* Emoj (frist task) */
 .stats-grid:nth-child(1)::before {
     position: absolute;
@@ -21,3 +21,16 @@ span.stat-number {
 .stats-container > .stats-grid:nth-child(3) .stat-label {
     color: white 
 }
+
+/* hover effect */
+
+.stat-grid:hover {
+    box-shadow: 5px 5px 5px rgb(54, 48, 48);
+}
+ 
+/* Intermediate card color*/
+.workout-plan:has(.difficulty.intermediate) {
+  background-color: #fff8ba;
+}
+
+
