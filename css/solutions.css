@@ -39,4 +39,17 @@ span.stat-number {
 .exercise-item:nth-child(4) {
   background-color: #d5fbdf;
 }
+/* added emoji in the second and last cards */
+.exercise-item:nth-child(2)::before {
+  content: "⚡";        
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 4px;   
+}
 
+.exercise-item:nth-child(4)::before {
+  content: "⚡";        
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 4px;   
+}
