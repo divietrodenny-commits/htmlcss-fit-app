@@ -85,3 +85,47 @@ span.stat-number {
   box-shadow: 0 4px 10px rgba(30, 144, 255, 0.4);     
   color: #fff;
 }
+
+/* base style for footer navigation links */
+.nav-footer .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #222;
+  background-color: #f5f5f5;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* darker background and blue text*/
+.nav-footer .nav-item:hover {
+  background-color: #e0e0e0;
+  color: #1e90ff;
+}
+
+/* first link always appears active” */
+.nav-footer .nav-item:first-child {
+  background-color: #e0e0e0;
+  color: #1e90ff;
+  font-weight: 600;
+}
+/* added " in the cit. */
+.quote-box::before {
+  content: '"';
+   position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 2.5rem;
+  opacity: 0.2;
+}
+
+.quote-box::after {
+  content: '"';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2.5rem;
+  opacity: 0.2;
+}
